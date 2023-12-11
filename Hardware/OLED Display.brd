@@ -47,9 +47,9 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
-<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
@@ -1565,6 +1565,17 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="-1.397" y="-2.159" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
 <text x="-1.651" y="-3.302" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
 </package>
+<package name="PAD.03X.04">
+<description>&lt;h3&gt;Electrically Conductive Pad 0.04" Circle&lt;/h3&gt;
+Used as a test point connection for pogo pins or other debugging tools. 
+&lt;p&gt;Specifications:
+&lt;li&gt;Area: 0.04" x 0.04"&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;TEST_POINT&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<smd name="1" x="0" y="0" dx="1.016" dy="1.016" layer="1" roundness="100" cream="no"/>
+</package>
 </packages>
 </library>
 <library name="SparkFun-Resistors">
@@ -2937,16 +2948,20 @@ These are the free and generally easy to produce 2-layer PCB design rules. You c
 <attribute name="PROD_ID" value="" x="26.67" y="3.556" size="1.778" layer="28" font="vector" ratio="15" rot="MR180" display="off"/>
 <attribute name="VALUE" x="28.321" y="3.556" size="0.6096" layer="28" font="vector" ratio="20" rot="MR270" align="top-center"/>
 </element>
-<element name="LOGO1" library="SparkFun-Aesthetics" package="SFE_LOGO_NAME_FLAME_.1" value="SFE_LOGO_NAME_FLAME.1_INCH" x="15.24" y="7.62" smashed="yes" rot="MR0"/>
+<element name="LOGO1" library="SparkFun-Aesthetics" package="SFE_LOGO_NAME_FLAME_.1" value="SFE_LOGO_NAME_FLAME.1_INCH" x="17.78" y="7.62" smashed="yes" rot="MR0"/>
 <element name="U$1" library="SparkFun-Aesthetics" package="SFE_LOGO_FLAME_.2" value="" x="41.91" y="3.81" smashed="yes"/>
 <element name="U3" library="Module" package="QG-2832TLBFG02" value="QG-2832TLBFG02" x="30.48" y="5.08" smashed="yes">
 <attribute name="NAME" x="28.829" y="9.779" size="0.6096" layer="27" font="vector" ratio="20"/>
 <attribute name="PROD_ID" value="" x="30.48" y="5.08" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 <attribute name="VALUE" x="28.702" y="0.127" size="0.6096" layer="27" font="vector" ratio="20"/>
 </element>
-<element name="U$2" library="prod" package="OLED_DISPLAY94" value="" x="15.24" y="5.08" smashed="yes" rot="MR0"/>
-<element name="U$3" library="prod" package="128X3295" value="" x="15.24" y="3.81" smashed="yes" rot="MR0"/>
+<element name="U$2" library="prod" package="OLED_DISPLAY94" value="" x="17.78" y="5.08" smashed="yes" rot="MR0"/>
+<element name="U$3" library="prod" package="128X3295" value="" x="17.78" y="3.81" smashed="yes" rot="MR0"/>
 <element name="U$4" library="bot" package="#I2C#16" value="" x="30.607" y="6.604" smashed="yes" rot="MR0"/>
+<element name="TP1" library="SparkFun-Connectors" package="PAD.03X.04" value="TEST-POINT3X4" x="11.43" y="6.35" smashed="yes" rot="MR0"/>
+<element name="TP2" library="SparkFun-Connectors" package="PAD.03X.04" value="TEST-POINT3X4" x="11.43" y="8.89" smashed="yes" rot="MR0"/>
+<element name="TP3" library="SparkFun-Connectors" package="PAD.03X.04" value="TEST-POINT3X4" x="11.43" y="3.81" smashed="yes" rot="MR0"/>
+<element name="TP4" library="SparkFun-Connectors" package="PAD.03X.04" value="TEST-POINT3X4" x="11.43" y="1.27" smashed="yes" rot="MR0"/>
 </elements>
 <signals>
 <signal name="N$2">
@@ -3010,6 +3025,7 @@ These are the free and generally easy to produce 2-layer PCB design rules. You c
 <via x="36.449" y="3.81" extent="1-16" drill="0.3048"/>
 <via x="24.638" y="4.572" extent="1-16" drill="0.3048"/>
 <via x="32.512" y="6.223" extent="1-16" drill="0.3048"/>
+<contactref element="TP4" pad="1"/>
 </signal>
 <signal name="SCL">
 <contactref element="R1" pad="1"/>
@@ -3024,12 +3040,15 @@ These are the free and generally easy to produce 2-layer PCB design rules. You c
 <wire x1="38.33" y1="2.31" x2="39.37" y2="2.31" width="0.254" layer="16"/>
 <wire x1="6.58" y1="5.31" x2="5.08" y2="5.31" width="0.254" layer="16"/>
 <wire x1="6.58" y1="5.31" x2="8.763" y2="7.493" width="0.254" layer="16"/>
-<wire x1="8.763" y1="7.493" x2="24.13" y2="7.493" width="0.254" layer="16"/>
+<wire x1="8.763" y1="7.493" x2="11.43" y2="7.493" width="0.254" layer="16"/>
+<wire x1="11.43" y1="7.493" x2="24.13" y2="7.493" width="0.254" layer="16"/>
 <wire x1="25.82" y1="7.366" x2="24.257" y2="7.366" width="0.254" layer="16"/>
 <wire x1="24.13" y1="7.493" x2="24.257" y2="7.366" width="0.254" layer="16"/>
 <wire x1="30.414" y1="6.914" x2="24.709" y2="6.914" width="0.254" layer="1"/>
 <wire x1="24.709" y1="6.914" x2="24.13" y2="7.493" width="0.254" layer="1"/>
 <via x="24.13" y="7.493" extent="1-16" drill="0.3048"/>
+<contactref element="TP1" pad="1"/>
+<wire x1="11.43" y1="7.493" x2="11.43" y2="6.35" width="0.254" layer="16"/>
 </signal>
 <signal name="SDA">
 <contactref element="R2" pad="1"/>
@@ -3041,7 +3060,8 @@ These are the free and generally easy to produce 2-layer PCB design rules. You c
 <wire x1="3.302" y1="4.572" x2="3.302" y2="5.588" width="0.254" layer="16"/>
 <wire x1="8.128" y1="10.414" x2="3.302" y2="5.588" width="0.254" layer="16"/>
 <wire x1="25.82" y1="10.414" x2="24.511" y2="10.414" width="0.254" layer="16"/>
-<wire x1="24.511" y1="10.414" x2="8.128" y2="10.414" width="0.254" layer="16"/>
+<wire x1="24.511" y1="10.414" x2="11.43" y2="10.414" width="0.254" layer="16"/>
+<wire x1="11.43" y1="10.414" x2="8.128" y2="10.414" width="0.254" layer="16"/>
 <wire x1="27.01" y1="7.534" x2="26.797" y2="7.747" width="0.254" layer="1"/>
 <via x="24.511" y="10.414" extent="1-16" drill="0.3048"/>
 <wire x1="30.414" y1="7.534" x2="31.82696875" y2="7.534" width="0.254" layer="1"/>
@@ -3057,6 +3077,8 @@ These are the free and generally easy to produce 2-layer PCB design rules. You c
 <wire x1="26.797" y1="9.398" x2="25.781" y2="10.414" width="0.254" layer="1"/>
 <wire x1="25.781" y1="10.414" x2="24.511" y2="10.414" width="0.254" layer="1"/>
 <wire x1="30.414" y1="7.534" x2="27.01" y2="7.534" width="0.254" layer="1"/>
+<contactref element="TP2" pad="1"/>
+<wire x1="11.43" y1="10.414" x2="11.43" y2="8.89" width="0.254" layer="16"/>
 </signal>
 <signal name="N$6">
 <contactref element="C5" pad="1"/>
@@ -3115,7 +3137,9 @@ These are the free and generally easy to produce 2-layer PCB design rules. You c
 <contactref element="U2" pad="3"/>
 <contactref element="U3" pad="8"/>
 <contactref element="U3" pad="5"/>
-<wire x1="5.08" y1="3.31" x2="23.36" y2="3.31" width="0.508" layer="16"/>
+<wire x1="5.08" y1="3.31" x2="9.779" y2="3.31" width="0.508" layer="16"/>
+<wire x1="9.779" y1="3.31" x2="9.775" y2="3.306" width="0.508" layer="16"/>
+<wire x1="13.343" y1="3.31" x2="23.36" y2="3.31" width="0.508" layer="16"/>
 <wire x1="23.36" y1="3.31" x2="24.257" y2="2.413" width="0.508" layer="16"/>
 <wire x1="26.67" y1="2.456" x2="26.627" y2="2.413" width="0.508" layer="16"/>
 <wire x1="26.627" y1="2.413" x2="24.257" y2="2.413" width="0.508" layer="16"/>
@@ -3144,6 +3168,14 @@ These are the free and generally easy to produce 2-layer PCB design rules. You c
 <wire x1="31.666" y1="2.456" x2="31.877" y2="2.667" width="0.508" layer="16"/>
 <wire x1="26.67" y1="4.992" x2="26.67" y2="2.456" width="0.254" layer="16"/>
 <wire x1="30.48" y1="5.08" x2="30.48" y2="2.456" width="0.254" layer="16"/>
+<contactref element="TP3" pad="1"/>
+<wire x1="10.668" y1="2.413" x2="9.775" y2="3.306" width="0.508" layer="16"/>
+<wire x1="10.668" y1="2.413" x2="11.43" y2="2.413" width="0.508" layer="16"/>
+<wire x1="11.43" y1="2.413" x2="12.446" y2="2.413" width="0.508" layer="16"/>
+<wire x1="12.446" y1="2.413" x2="13.343" y2="3.31" width="0.508" layer="16"/>
+<wire x1="11.43" y1="3.81" x2="11.43" y2="2.413" width="0.508" layer="16"/>
+<wire x1="30.48" y1="5.08" x2="30.414" y2="5.674" width="0" layer="19" extent="1-16"/>
+<wire x1="30.414" y1="3.814" x2="30.48" y2="5.08" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="N$1">
 <contactref element="C2" pad="2"/>
