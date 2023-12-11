@@ -223,7 +223,7 @@
 <text x="-1.651" y="0" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center">&gt;NAME</text>
 <text x="1.651" y="0" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center">&gt;VALUE</text>
 </package>
-<package name="OLED-12832">
+<package name="QG-2832TLBFG02">
 <description>&lt;h3&gt;QG-2832TLBFG02&lt;/h3&gt;
 &lt;p&gt;Mechanical Specifications:
 &lt;ul&gt;
@@ -326,12 +326,12 @@ V CC down to 1V&lt;/p&gt;</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="OLED_0.9&quot;-QG-2832TLBFG02" prefix="U">
+<deviceset name="QG-2832TLBFG02" prefix="U">
 <gates>
 <gate name="G$1" symbol="QG-2832TLBFG02" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="OLED-12832">
+<device name="" package="QG-2832TLBFG02">
 <connects>
 <connect gate="G$1" pin="C1N" pad="4"/>
 <connect gate="G$1" pin="C1P" pad="3"/>
@@ -24019,7 +24019,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="U2" library="Module" deviceset="APX803S-SA" device=""/>
 <part name="SUPPLY6" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="LOGO1" library="SparkFun-Aesthetics" deviceset="SFE_LOGO_NAME_FLAME" device=".1_INCH"/>
-<part name="U3" library="Module" deviceset="OLED_0.9&quot;-QG-2832TLBFG02" device=""/>
+<part name="U3" library="Module" deviceset="QG-2832TLBFG02" device=""/>
 <part name="GND16" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 </parts>
 <sheets>
@@ -24088,9 +24088,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="H1" gate="G$1" x="238.76" y="33.02" smashed="yes"/>
 <instance part="H2" gate="G$1" x="238.76" y="30.48" smashed="yes"/>
 <instance part="LOGO3" gate="G$1" x="157.48" y="40.64" smashed="yes"/>
-<instance part="C7" gate="G$1" x="27.94" y="129.54" smashed="yes" rot="MR180">
-<attribute name="NAME" x="28.321" y="133.096" size="1.778" layer="95" font="vector" rot="R270"/>
-<attribute name="VALUE" x="28.321" y="118.364" size="1.778" layer="96" font="vector" rot="MR90"/>
+<instance part="C7" gate="G$1" x="27.94" y="127" smashed="yes" rot="MR180">
+<attribute name="NAME" x="28.321" y="130.556" size="1.778" layer="95" font="vector" rot="R270"/>
+<attribute name="VALUE" x="28.321" y="115.824" size="1.778" layer="96" font="vector" rot="MR90"/>
 </instance>
 <instance part="C8" gate="G$1" x="17.78" y="144.78" smashed="yes" rot="MR180">
 <attribute name="NAME" x="17.399" y="148.336" size="1.778" layer="95" font="vector" rot="MR270"/>
@@ -24099,8 +24099,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="GND1" gate="1" x="22.86" y="114.3" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="22.86" y="114.046" size="1.778" layer="96" font="vector" rot="MR0" align="top-center"/>
 </instance>
-<instance part="SUPPLY1" gate="G$1" x="17.78" y="172.72" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="17.78" y="175.514" size="1.778" layer="96" font="vector" rot="MR0" align="bottom-center"/>
+<instance part="SUPPLY1" gate="G$1" x="17.78" y="152.4" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="17.78" y="155.194" size="1.778" layer="96" font="vector" rot="MR0" align="bottom-center"/>
 </instance>
 <instance part="SUPPLY2" gate="G$1" x="134.62" y="149.86" smashed="yes">
 <attribute name="VALUE" x="134.62" y="152.654" size="1.778" layer="96" font="vector" align="bottom-center"/>
@@ -24133,8 +24133,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="GND5" gate="1" x="35.56" y="114.3" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="35.56" y="114.046" size="1.778" layer="96" font="vector" rot="MR0" align="top-center"/>
 </instance>
-<instance part="GND6" gate="1" x="73.66" y="104.14" smashed="yes">
-<attribute name="VALUE" x="73.66" y="103.886" size="1.778" layer="96" font="vector" align="top-center"/>
+<instance part="GND6" gate="1" x="73.66" y="114.3" smashed="yes">
+<attribute name="VALUE" x="73.66" y="114.046" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
 <instance part="GND7" gate="1" x="17.78" y="114.3" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="17.78" y="114.046" size="1.778" layer="96" font="vector" rot="MR0" align="top-center"/>
@@ -24187,7 +24187,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </segment>
 <segment>
 <pinref part="C7" gate="G$1" pin="1"/>
-<wire x1="27.94" y1="124.46" x2="27.94" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="121.92" x2="27.94" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="GND4" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -24204,7 +24204,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <segment>
 <pinref part="GND6" gate="1" pin="GND"/>
 <pinref part="R3" gate="G$1" pin="1"/>
-<wire x1="73.66" y1="119.38" x2="73.66" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="119.38" x2="73.66" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C4" gate="G$1" pin="2"/>
@@ -24286,7 +24286,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </net>
 <net name="N$7" class="0">
 <segment>
-<wire x1="27.94" y1="134.62" x2="27.94" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="134.62" x2="27.94" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="C7" gate="G$1" pin="2"/>
 <pinref part="U3" gate="G$1" pin="VCC"/>
 <wire x1="45.72" y1="134.62" x2="27.94" y2="134.62" width="0.1524" layer="91"/>
@@ -24335,7 +24335,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="C8" gate="G$1" pin="2"/>
 <wire x1="17.78" y1="147.32" x2="17.78" y2="149.86" width="0.1524" layer="91" style="longdash"/>
 <junction x="17.78" y="149.86"/>
-<wire x1="17.78" y1="172.72" x2="17.78" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="152.4" x2="17.78" y2="149.86" width="0.1524" layer="91"/>
 <pinref part="SUPPLY1" gate="G$1" pin="3.3V"/>
 <pinref part="U3" gate="G$1" pin="VDD"/>
 <pinref part="U3" gate="G$1" pin="VBAT"/>
