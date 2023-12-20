@@ -223,7 +223,7 @@
 <text x="-1.651" y="0" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center">&gt;NAME</text>
 <text x="1.651" y="0" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center">&gt;VALUE</text>
 </package>
-<package name="QG-2832TLBFG02">
+<package name="AMO091-12832BFG02-H14">
 <description>&lt;h3&gt;QG-2832TLBFG02&lt;/h3&gt;
 &lt;p&gt;Mechanical Specifications:
 &lt;ul&gt;
@@ -268,7 +268,7 @@
 <text x="-5.08" y="5.08" size="1.778" layer="95" font="vector">&gt;NAME</text>
 <text x="-5.08" y="-7.112" size="1.778" layer="96" font="vector">&gt;VALUE</text>
 </symbol>
-<symbol name="QG-2832TLBFG02">
+<symbol name="AMO091-12832BFG02-H14">
 <description>QG-2832TLBFG02</description>
 <pin name="VBAT" x="-12.7" y="7.62" length="short"/>
 <pin name="C1P" x="-12.7" y="5.08" length="short"/>
@@ -276,7 +276,7 @@
 <pin name="VSS" x="-12.7" y="-10.16" length="short"/>
 <pin name="VDD" x="-12.7" y="10.16" length="short"/>
 <pin name="C2P" x="-12.7" y="0" length="short"/>
-<pin name="RST" x="12.7" y="10.16" length="short" rot="R180"/>
+<pin name="!RST!" x="12.7" y="10.16" length="short" rot="R180"/>
 <pin name="SDA" x="12.7" y="7.62" length="short" rot="R180"/>
 <pin name="SCL" x="12.7" y="5.08" length="short" rot="R180"/>
 <pin name="IREF" x="12.7" y="-7.62" length="short" rot="R180"/>
@@ -320,25 +320,25 @@ V CC down to 1V&lt;/p&gt;</description>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="PROD_ID" value="" constant="no"/>
+<attribute name="PROD_ID" value="IC-21146" constant="no"/>
 </technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
-<deviceset name="QG-2832TLBFG02" prefix="U">
+<deviceset name="AMO091-12832BFG02-H14" prefix="U">
 <gates>
-<gate name="G$1" symbol="QG-2832TLBFG02" x="0" y="0"/>
+<gate name="G$1" symbol="AMO091-12832BFG02-H14" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="QG-2832TLBFG02">
+<device name="" package="AMO091-12832BFG02-H14">
 <connects>
+<connect gate="G$1" pin="!RST!" pad="9"/>
 <connect gate="G$1" pin="C1N" pad="4"/>
 <connect gate="G$1" pin="C1P" pad="3"/>
 <connect gate="G$1" pin="C2N" pad="2"/>
 <connect gate="G$1" pin="C2P" pad="1"/>
 <connect gate="G$1" pin="IREF" pad="12"/>
-<connect gate="G$1" pin="RST" pad="9"/>
 <connect gate="G$1" pin="SCL" pad="10"/>
 <connect gate="G$1" pin="SDA" pad="11"/>
 <connect gate="G$1" pin="VBAT" pad="5"/>
@@ -349,7 +349,7 @@ V CC down to 1V&lt;/p&gt;</description>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="PROD_ID" value="" constant="no"/>
+<attribute name="PROD_ID" value="LCD-21145" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -24158,7 +24158,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="U2" library="Module" deviceset="APX803S-SA" device=""/>
 <part name="SUPPLY6" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="LOGO1" library="SparkFun-Aesthetics" deviceset="SFE_LOGO_NAME_FLAME" device=".1_INCH"/>
-<part name="U3" library="Module" deviceset="QG-2832TLBFG02" device=""/>
+<part name="U3" library="Module" deviceset="AMO091-12832BFG02-H14" device=""/>
 <part name="GND16" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="TP1" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
 <part name="TP2" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X4"/>
@@ -24177,7 +24177,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="0" y1="99.06" x2="116.84" y2="99.06" width="0.1524" layer="97" style="longdash"/>
 <wire x1="116.84" y1="99.06" x2="160.02" y2="99.06" width="0.1524" layer="97" style="longdash"/>
 <text x="182.88" y="177.8" size="2.54" layer="94" font="vector" align="center">Qwiic Connectors</text>
-<text x="60.96" y="180.34" size="2.54" layer="94" font="vector" align="center">OLED Display - QG-2832TLBFG02</text>
+<text x="60.96" y="177.8" size="2.54" layer="94" font="vector" align="center">OLED Display 
+AMO091-12832BFG02-H14
+</text>
 <text x="60.96" y="91.44" size="2.54" layer="94" font="vector" align="center">Soft Start Circuit - APX803S-SA</text>
 <text x="129.54" y="91.44" size="2.54" layer="94" font="vector">Testpoints</text>
 <wire x1="160.02" y1="99.06" x2="248.92" y2="99.06" width="0.1524" layer="97" style="longdash"/>
@@ -24205,9 +24207,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="NAME" x="140.716" y="134.62" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
 <attribute name="VALUE" x="143.764" y="134.62" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
 </instance>
-<instance part="R3" gate="G$1" x="73.66" y="124.46" smashed="yes" rot="R90">
-<attribute name="NAME" x="74.422" y="129.54" size="1.778" layer="95" font="vector" rot="R270" align="bottom-center"/>
-<attribute name="VALUE" x="76.2" y="118.364" size="1.778" layer="96" font="vector" rot="R270" align="top-center"/>
+<instance part="R3" gate="G$1" x="81.28" y="124.46" smashed="yes" rot="R90">
+<attribute name="NAME" x="82.042" y="129.54" size="1.778" layer="95" font="vector" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="83.82" y="118.364" size="1.778" layer="96" font="vector" rot="R270" align="top-center"/>
 </instance>
 <instance part="C5" gate="G$1" x="35.56" y="124.46" smashed="yes" rot="MR0">
 <attribute name="NAME" x="35.687" y="127" size="1.778" layer="95" font="vector" rot="MR90"/>
@@ -24283,8 +24285,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="GND5" gate="1" x="35.56" y="114.3" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="35.56" y="114.046" size="1.778" layer="96" font="vector" rot="MR0" align="top-center"/>
 </instance>
-<instance part="GND6" gate="1" x="73.66" y="114.3" smashed="yes">
-<attribute name="VALUE" x="73.66" y="114.046" size="1.778" layer="96" font="vector" align="top-center"/>
+<instance part="GND6" gate="1" x="81.28" y="114.3" smashed="yes">
+<attribute name="VALUE" x="81.28" y="114.046" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
 <instance part="GND7" gate="1" x="17.78" y="114.3" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="17.78" y="114.046" size="1.778" layer="96" font="vector" rot="MR0" align="top-center"/>
@@ -24302,7 +24304,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="LOGO1" gate="G$1" x="167.64" y="33.02" smashed="yes"/>
 <instance part="U3" gate="G$1" x="58.42" y="139.7" smashed="yes">
 <attribute name="NAME" x="48.26" y="152.4" size="1.778" layer="95" font="vector"/>
-<attribute name="VALUE" x="48.26" y="124.46" size="1.778" layer="96" font="vector"/>
+<attribute name="VALUE" x="45.72" y="124.46" size="1.778" layer="96" font="vector"/>
 </instance>
 <instance part="GND16" gate="1" x="43.18" y="114.3" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="43.18" y="114.046" size="1.778" layer="96" font="vector" rot="MR0" align="top-center"/>
@@ -24341,8 +24343,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <net name="N$9" class="0">
 <segment>
 <pinref part="R3" gate="G$1" pin="2"/>
-<wire x1="71.12" y1="132.08" x2="73.66" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="132.08" x2="73.66" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="132.08" x2="81.28" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="132.08" x2="81.28" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="U3" gate="G$1" pin="IREF"/>
 </segment>
 </net>
@@ -24372,7 +24374,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <segment>
 <pinref part="GND6" gate="1" pin="GND"/>
 <pinref part="R3" gate="G$1" pin="1"/>
-<wire x1="73.66" y1="119.38" x2="73.66" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="119.38" x2="81.28" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C4" gate="G$1" pin="2"/>
@@ -24476,11 +24478,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="45.72" y1="134.62" x2="27.94" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="RST" class="0">
+<net name="!RST!" class="0">
 <segment>
 <wire x1="73.66" y1="149.86" x2="71.12" y2="149.86" width="0.1524" layer="91"/>
 <label x="73.66" y="149.86" size="1.27" layer="95" font="vector" xref="yes"/>
-<pinref part="U3" gate="G$1" pin="RST"/>
+<pinref part="U3" gate="G$1" pin="!RST!"/>
 </segment>
 <segment>
 <pinref part="R4" gate="G$1" pin="1"/>
@@ -24591,6 +24593,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </schematic>
 </drawing>
 <compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
 <note version="8.3" severity="warning">
 Since Version 8.3, EAGLE supports URNs for individual library
 assets (packages, symbols, and devices). The URNs of those assets
