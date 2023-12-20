@@ -24146,8 +24146,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="SUPPLY3" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="SUPPLY4" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="SUPPLY5" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
-<part name="J3" library="SparkFun-Connectors" deviceset="QWIIC_CONNECTOR" device="JS-1MM" value="QWIIC_RIGHT_ANGLE"/>
-<part name="J1" library="SparkFun-Connectors" deviceset="QWIIC_CONNECTOR" device="JS-1MM" value="QWIIC_RIGHT_ANGLE"/>
+<part name="J3" library="SparkFun-Connectors" deviceset="QWIIC_CONNECTOR" device="" value="Vertical Qwiic Connector"/>
+<part name="J1" library="SparkFun-Connectors" deviceset="QWIIC_CONNECTOR" device="" value="Vertical Qwiic Connector"/>
 <part name="R4" library="SparkFun-Resistors" deviceset="10KOHM" device="-0603-1/10W-1%" value="10k"/>
 <part name="LOGO4" library="SparkFun-Aesthetics" deviceset="SPECIAL_INSTRUCTIONS" device="-ORDERING"/>
 <part name="GND4" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
@@ -24267,11 +24267,11 @@ AMO091-12832BFG02-H14
 <attribute name="VALUE" x="53.34" y="71.374" size="1.778" layer="96" font="vector" align="bottom-center"/>
 </instance>
 <instance part="J3" gate="J1" x="175.26" y="137.16" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="198.12" y="131.826" size="1.778" layer="96" font="vector" rot="MR0" align="top-left"/>
+<attribute name="VALUE" x="205.74" y="131.826" size="1.778" layer="96" font="vector" rot="MR0" align="top-left"/>
 <attribute name="NAME" x="180.34" y="145.034" size="1.778" layer="95" font="vector" rot="MR0"/>
 </instance>
 <instance part="J1" gate="J1" x="218.44" y="137.16" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="238.76" y="131.826" size="1.778" layer="96" font="vector" rot="MR0" align="top-left"/>
+<attribute name="VALUE" x="248.92" y="131.826" size="1.778" layer="96" font="vector" rot="MR0" align="top-left"/>
 <attribute name="NAME" x="223.52" y="145.034" size="1.778" layer="95" font="vector" rot="MR0"/>
 </instance>
 <instance part="R4" gate="G$1" x="53.34" y="60.96" smashed="yes" rot="R90">
