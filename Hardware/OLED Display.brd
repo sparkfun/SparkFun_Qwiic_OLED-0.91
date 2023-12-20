@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="dots" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="dots" multiple="1" display="yes" altdistance="0.002" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -55,7 +55,7 @@
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="13" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
@@ -203,20 +203,23 @@
 <text x="0" y="-0.05" size="0.02" layer="22" font="vector" rot="MR0">C:/Users/NOA-01/Documents/eagle/Eagle/ulp/logo/NOA Logo - for Screen - 1000x435 + White Background Mirror.bmp</text>
 <text x="31.75" y="-14.478" size="1.778" layer="51" font="vector">NOA Labs</text>
 <text x="12.7" y="-17.78" size="1.778" layer="51" font="vector">Revised By: Elias Santistevan</text>
-<dimension x1="44.4246" y1="12.7" x2="0" y2="12.7" x3="22.2123" y3="19.05" textsize="1.778" textratio="15" layer="47" unit="inch"/>
+<dimension x1="44.4246" y1="12.7" x2="0" y2="12.7" x3="22.2123" y3="24.13" textsize="1.778" textratio="15" layer="47" unit="inch"/>
 <dimension x1="41.91" y1="10.16" x2="44.45" y2="10.16" x3="43.18" y3="13.97" textsize="1.778" textratio="15" layer="47" unit="inch"/>
 <dimension x1="0" y1="12.7" x2="0" y2="0" x3="-12.7" y3="6.35" textsize="1.778" textratio="15" layer="47" unit="inch"/>
 <dimension x1="2.54" y1="10.16" x2="2.54" y2="12.7" x3="-5.08" y3="11.43" textsize="1.778" textratio="15" layer="47" unit="inch"/>
 <dimension x1="5.08" y1="3.81" x2="5.08" y2="0" x3="-8.89" y3="1.905" textsize="1.778" textratio="15" layer="47" unit="inch"/>
 <dimension x1="41.91" y1="3.81" x2="41.91" y2="0" x3="49.53" y3="1.905" textsize="1.778" textratio="15" layer="47" unit="inch"/>
 <text x="11.43" y="-5.08" size="1.778" layer="47" font="vector" ratio="15">Units in Inches</text>
-<text x="59.69" y="25.4" size="1.778" layer="51" font="vector">1.6mm Thickness
+<text x="59.69" y="22.86" size="1.778" layer="51" font="vector">1.6mm Thickness
 1 oz. Copper
 Lead-Free HASL finish
 Material: TG135-140
 Red Soldermask
-White Silkscreen</text>
+White Silkscreen 
+Two Layer</text>
 <text x="43.942" y="5.08" size="1.016" layer="16" font="vector" ratio="20" rot="SMR270">v11</text>
+<dimension x1="0" y1="12.7" x2="5.969" y2="11.176" x3="2.9845" y3="15.24" textsize="1.778" textratio="15" layer="47" dtype="horizontal" unit="inch"/>
+<dimension x1="0" y1="12.7" x2="38.5572" y2="12.0904" x3="19.2786" y3="19.05" textsize="1.778" textratio="15" layer="47" dtype="horizontal" unit="inch"/>
 </plain>
 <libraries>
 <library name="Module">
@@ -3026,34 +3029,6 @@ These are the free and generally easy to produce 2-layer PCB design rules. You c
 <via x="24.638" y="4.572" extent="1-16" drill="0.3048"/>
 <via x="32.512" y="6.223" extent="1-16" drill="0.3048"/>
 <contactref element="TP4" pad="1"/>
-<wire x1="38.1" y1="6.35" x2="39.37" y2="5.31" width="0" layer="19" extent="16-16"/>
-<wire x1="36.449" y1="3.81" x2="38.1" y2="6.35" width="0" layer="19" extent="1-1"/>
-<wire x1="35.14" y1="4.191" x2="36.449" y2="3.81" width="0" layer="19" extent="16-16"/>
-<wire x1="35.14" y1="2.667" x2="35.14" y2="4.191" width="0" layer="19" extent="16-16"/>
-<wire x1="38.1" y1="1.27" x2="36.449" y2="3.81" width="0" layer="19" extent="1-1"/>
-<wire x1="36.449" y1="9.017" x2="38.1" y2="6.35" width="0" layer="19" extent="1-1"/>
-<wire x1="35.14" y1="9.144" x2="36.449" y2="9.017" width="0" layer="19" extent="16-16"/>
-<wire x1="35.14" y1="7.62" x2="35.14" y2="9.144" width="0" layer="19" extent="16-16"/>
-<wire x1="32.512" y1="6.223" x2="35.14" y2="7.62" width="0" layer="19" extent="16-16"/>
-<wire x1="30.414" y1="5.054" x2="32.512" y2="6.223" width="0" layer="19" extent="1-1"/>
-<wire x1="31.75" y1="10.16" x2="35.14" y2="9.144" width="0" layer="19" extent="16-16"/>
-<wire x1="25.72" y1="4.556" x2="30.414" y2="5.054" width="0" layer="19" extent="1-16"/>
-<wire x1="24.638" y1="4.572" x2="25.72" y2="4.556" width="0" layer="19" extent="16-16"/>
-<wire x1="21.59" y1="6.35" x2="24.638" y2="4.572" width="0" layer="19" extent="1-1"/>
-<wire x1="21.59" y1="8.89" x2="21.59" y2="6.35" width="0" layer="19" extent="1-1"/>
-<wire x1="24.13" y1="8.89" x2="21.59" y2="8.89" width="0" layer="19" extent="1-1"/>
-<wire x1="25.82" y1="8.89" x2="24.13" y2="8.89" width="0" layer="19" extent="16-16"/>
-<wire x1="21.59" y1="2.54" x2="24.638" y2="4.572" width="0" layer="19" extent="1-1"/>
-<wire x1="16.51" y1="8.89" x2="21.59" y2="8.89" width="0" layer="19" extent="1-1"/>
-<wire x1="16.51" y1="6.35" x2="16.51" y2="8.89" width="0" layer="19" extent="1-1"/>
-<wire x1="16.51" y1="2.54" x2="16.51" y2="6.35" width="0" layer="19" extent="1-1"/>
-<wire x1="11.43" y1="1.27" x2="16.51" y2="2.54" width="0" layer="19" extent="16-16"/>
-<wire x1="8.89" y1="2.54" x2="11.43" y2="1.27" width="0" layer="19" extent="16-16"/>
-<wire x1="8.89" y1="6.35" x2="8.89" y2="2.54" width="0" layer="19" extent="1-1"/>
-<wire x1="8.89" y1="8.89" x2="8.89" y2="6.35" width="0" layer="19" extent="1-1"/>
-<wire x1="6.35" y1="6.35" x2="8.89" y2="6.35" width="0" layer="19" extent="1-1"/>
-<wire x1="6.35" y1="10.16" x2="8.89" y2="8.89" width="0" layer="19" extent="1-1"/>
-<wire x1="5.08" y1="2.31" x2="8.89" y2="2.54" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="SCL">
 <contactref element="R1" pad="1"/>
@@ -3179,7 +3154,6 @@ These are the free and generally easy to produce 2-layer PCB design rules. You c
 <vertex x="33.655" y="3.556"/>
 <vertex x="29.337" y="3.556"/>
 </polygon>
-<wire x1="33.397" y1="2.71" x2="33.44" y2="2.667" width="0.508" layer="16"/>
 <wire x1="33.44" y1="2.667" x2="33.44" y2="4.191" width="0.508" layer="16"/>
 <wire x1="33.44" y1="5.168" x2="33.401" y2="5.207" width="0.508" layer="16"/>
 <wire x1="33.44" y1="5.168" x2="33.44" y2="4.191" width="0.508" layer="16"/>
@@ -3200,8 +3174,6 @@ These are the free and generally easy to produce 2-layer PCB design rules. You c
 <wire x1="11.43" y1="2.413" x2="12.446" y2="2.413" width="0.508" layer="16"/>
 <wire x1="12.446" y1="2.413" x2="13.343" y2="3.31" width="0.508" layer="16"/>
 <wire x1="11.43" y1="3.81" x2="11.43" y2="2.413" width="0.508" layer="16"/>
-<wire x1="30.48" y1="5.08" x2="30.414" y2="5.674" width="0" layer="19" extent="1-16"/>
-<wire x1="30.414" y1="3.814" x2="30.48" y2="5.08" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="N$1">
 <contactref element="C2" pad="2"/>
