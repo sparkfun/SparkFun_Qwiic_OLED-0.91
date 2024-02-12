@@ -1,11 +1,15 @@
 SparkFun Qwiic OLED Display (0.91", 128x32)
 ========================================
 
-[![SparkFun Qwiic OLED Display (0.91", 128x32)](URL for picture of part)](https://www.sparkfun.com/products/24606)
+[![SparkFun Qwiic OLED Display (0.91", 128x32)](https://cdn.sparkfun.com/r/600-600/assets/parts/2/4/9/6/3/LCD-24606-Qwiic-OLED-Display-Feature.jpg)](https://www.sparkfun.com/products/24606)
 
-[*SparkFun Qwiic OLED Display (0.91", 128x32) [LCD-24606]*]([URL for product on Sparkfun.com](https://www.sparkfun.com/products/24606))
+[*SparkFun Qwiic OLED Display (0.91", 128x32) [LCD-24606]*](https://www.sparkfun.com/products/24606)
 
-<Basic description of the part.>
+The SparkFun Qwiic OLED Display can display up to three lines of text and features 128x32 pixels in a small 0.91” (diagonal) frame. As an OLED, this display does not have a back light layer (unlike LCDs) and therefore it’s thinner, consumes less power, and has higher contrast. 
+
+Thanks to an I<sup>2</sup>C command structure, the board's firmware maintains speed by updating only the part of the screen that changes. This is the same concept use with "Dirty Rectangles" or "Bit blit" operations in computer graphics. 
+
+Version 1.1 of the Qwiic OLED display includes 2x vertical Qwiic connectors populated on the back of the board to easily mount the board and keep the wires inside of the enclosure. Note that the two mounting holes have also been moved to one side of the board. 
 
 
 
