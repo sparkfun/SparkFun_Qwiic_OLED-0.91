@@ -1,0 +1,1 @@
+The files contained in these folders are used for the product page and [SparkFun Qwiic OLED Arduino Library - Hookup Guide](https://docs.sparkfun.com/SparkFun_Qwiic_OLED_Arduino_Library/). Be careful about deleting the files or changing the paths for the Qwiic OLED (0.1", 128x32).
